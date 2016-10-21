@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		label{
+			display: inline-block;
+			width: 25px;
+			height: 25px;
+			background: url(img/an.png) no-repeat;
+			background-position:0 -25px;
+		}
+		input{
+			display: none;
+		}
+		#small:checked+label{
+			background-position: 0 0;
+		}
+		#con:checked+label{
+			background-position: 0 0;
+		}
+		#big:checked+label{
+			background-position: 0 0;
+		}
+	</style>
+</head>
+<body>
+	<input type='radio' value='小' name='ass' id='small'><label for='small'></label>小
+ <input type='radio' value='中' name='ass'id='con'><label for='con'></label>中
+	<input type='radio' value='大' name='ass'id='big'><label for='big'></label>大
+</body>
+</html>

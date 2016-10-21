@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		label{
+			display: inline-block;
+			width: 25px;
+			height: 25px;
+			background: url(img/an.png) no-repeat;
+			background-position:0 -75px;
+		}
+		#o{
+			background-position:0 -125px;
+		}
+		 input{
+			display: none;
+		}
+		#a:checked+label{
+			background-position: 0 -100px;
+		}
+		#b:checked+label{
+			background-position: 0 -100px;
+		}
+		#c:checked+label{
+			background-position: 0 -100px;
+		} 
+		#d:checked+label{
+			background-position: 0 -125px;
+		} 
+	</style>
+</head>
+<body>
+	<input type='checkbox' value='A' id='a'><label for='a'></label>A
+ 	<input type='checkbox' value='B' id='b'><label for='b'></label>B
+	<input type='checkbox' value='C' id='c'><label for='c'></label>C
+	<input type='checkbox' value='D' id='d'><label for='d' id='o'></label>D
+</body>
+</html>
